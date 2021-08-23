@@ -12,10 +12,12 @@ extension UIView.AnimationOptions {
         case .easeIn:
             return .curveEaseIn
         case .easeInOut:
-            return UIView.AnimationOptions()
+            return .curveEaseInOut
         case .easeOut:
             return .curveEaseOut
         case .linear:
+            return .curveLinear
+        @unknown default:
             return .curveLinear
         }
     }
